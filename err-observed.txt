@@ -1,0 +1,1162 @@
+Libomptarget --> Init target library!
+OMPT: Runtime: Intel(R) OMP version: 5.0.20211013
+Libomptarget --> Call to omp_get_num_devices returning 0
+OMPT: Set callback for ompt_callback_target_map event with result: 5
+Libomptarget --> Initialized OMPT
+Libomptarget --> Loading RTLs...
+Libomptarget --> Loading library 'libomptarget.rtl.level0.so'...
+Target LEVEL0 RTL --> Init Level0 plugin!
+Target LEVEL0 RTL --> omp_get_thread_limit() returned 2147483647
+Target LEVEL0 RTL --> omp_get_max_teams() returned 0
+Libomptarget --> Successfully loaded library 'libomptarget.rtl.level0.so'!
+Target LEVEL0 RTL --> Looking for Level0 devices...
+Target LEVEL0 RTL --> ZE_CALLER: zeInit ( ZE_INIT_FLAG_GPU_ONLY )
+Target LEVEL0 RTL --> ZE_CALLEE: zeInit (
+Target LEVEL0 RTL -->     flags = 1
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Initialized L0, API 10002
+Target LEVEL0 RTL --> ZE_CALLER: zeDriverGet ( &numDrivers, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeDriverGet (
+Target LEVEL0 RTL -->     pCount = 0x00007ffd893efbdc
+Target LEVEL0 RTL -->     phDrivers = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeDriverGet ( &numDrivers, driverHandles.data() )
+Target LEVEL0 RTL --> ZE_CALLEE: zeDriverGet (
+Target LEVEL0 RTL -->     pCount = 0x00007ffd893efbdc
+Target LEVEL0 RTL -->     phDrivers = 0x00000000007207b0
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Found 1 driver(s)!
+Target LEVEL0 RTL --> ZE_CALLER: zeDeviceGet ( driverHandles[i], &numDevices, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeDeviceGet (
+Target LEVEL0 RTL -->     hDriver = 0x00000000007207d0
+Target LEVEL0 RTL -->     pCount = 0x00007ffd893efbe0
+Target LEVEL0 RTL -->     phDevices = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeDeviceGet ( driverHandles[i], &numDevices, devices.data() )
+Target LEVEL0 RTL --> ZE_CALLEE: zeDeviceGet (
+Target LEVEL0 RTL -->     hDriver = 0x00000000007207d0
+Target LEVEL0 RTL -->     pCount = 0x00007ffd893efbe0
+Target LEVEL0 RTL -->     phDevices = 0x00000000007946c0
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeDeviceGetProperties ( Device, &properties )
+Target LEVEL0 RTL --> ZE_CALLEE: zeDeviceGetProperties (
+Target LEVEL0 RTL -->     hDevice = 0x0000000000720bd0
+Target LEVEL0 RTL -->     pDeviceProperties = 0x00007ffd893ef9b8
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeDeviceGetComputeProperties ( Device, &computeProperties )
+Target LEVEL0 RTL --> ZE_CALLEE: zeDeviceGetComputeProperties (
+Target LEVEL0 RTL -->     hDevice = 0x0000000000720bd0
+Target LEVEL0 RTL -->     pComputeProperties = 0x00007ffd893ef960
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeDeviceGetCommandQueueGroupProperties ( Device, &groupCount, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeDeviceGetCommandQueueGroupProperties (
+Target LEVEL0 RTL -->     hDevice = 0x0000000000720bd0
+Target LEVEL0 RTL -->     pCount = 0x00007ffd893ef930
+Target LEVEL0 RTL -->     pCommandQueueGroupProperties = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeDeviceGetCommandQueueGroupProperties ( Device, &groupCount, groupProperties.data() )
+Target LEVEL0 RTL --> ZE_CALLEE: zeDeviceGetCommandQueueGroupProperties (
+Target LEVEL0 RTL -->     hDevice = 0x0000000000720bd0
+Target LEVEL0 RTL -->     pCount = 0x00007ffd893ef930
+Target LEVEL0 RTL -->     pCommandQueueGroupProperties = 0x0000000000793f40
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeDeviceGetCommandQueueGroupProperties ( Device, &groupCount, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeDeviceGetCommandQueueGroupProperties (
+Target LEVEL0 RTL -->     hDevice = 0x0000000000720bd0
+Target LEVEL0 RTL -->     pCount = 0x00007ffd893ef8d4
+Target LEVEL0 RTL -->     pCommandQueueGroupProperties = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeDeviceGetCommandQueueGroupProperties ( Device, &groupCount, groupProperties.data() )
+Target LEVEL0 RTL --> ZE_CALLEE: zeDeviceGetCommandQueueGroupProperties (
+Target LEVEL0 RTL -->     hDevice = 0x0000000000720bd0
+Target LEVEL0 RTL -->     pCount = 0x00007ffd893ef8d4
+Target LEVEL0 RTL -->     pCommandQueueGroupProperties = 0x0000000000793f40
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeDeviceGetCommandQueueGroupProperties ( Device, &groupCount, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeDeviceGetCommandQueueGroupProperties (
+Target LEVEL0 RTL -->     hDevice = 0x0000000000720bd0
+Target LEVEL0 RTL -->     pCount = 0x00007ffd893ef8d4
+Target LEVEL0 RTL -->     pCommandQueueGroupProperties = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeDeviceGetCommandQueueGroupProperties ( Device, &groupCount, groupProperties.data() )
+Target LEVEL0 RTL --> ZE_CALLEE: zeDeviceGetCommandQueueGroupProperties (
+Target LEVEL0 RTL -->     hDevice = 0x0000000000720bd0
+Target LEVEL0 RTL -->     pCount = 0x00007ffd893ef8d4
+Target LEVEL0 RTL -->     pCommandQueueGroupProperties = 0x0000000000793f40
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Found a GPU device, Name = Intel(R) UHD Graphics P630 [0x3e96]
+Target LEVEL0 RTL --> ZE_CALLER: zeDeviceGetSubDevices ( Parent, &numDevices, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeDeviceGetSubDevices (
+Target LEVEL0 RTL -->     hDevice = 0x0000000000720bd0
+Target LEVEL0 RTL -->     pCount = 0x00007ffd893efab0
+Target LEVEL0 RTL -->     phSubdevices = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> No subdevices are found for device 0x0000000000720bd0 at level 0
+Target LEVEL0 RTL --> ZE_CALLER: zeDeviceGetCommandQueueGroupProperties ( Device, &groupCount, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeDeviceGetCommandQueueGroupProperties (
+Target LEVEL0 RTL -->     hDevice = 0x0000000000720bd0
+Target LEVEL0 RTL -->     pCount = 0x00007ffd893efb14
+Target LEVEL0 RTL -->     pCommandQueueGroupProperties = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeDeviceGetCommandQueueGroupProperties ( Device, &groupCount, groupProperties.data() )
+Target LEVEL0 RTL --> ZE_CALLEE: zeDeviceGetCommandQueueGroupProperties (
+Target LEVEL0 RTL -->     hDevice = 0x0000000000720bd0
+Target LEVEL0 RTL -->     pCount = 0x00007ffd893efb14
+Target LEVEL0 RTL -->     pCommandQueueGroupProperties = 0x0000000000793f40
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Could not find multi-context command queue group for device 0x0000000000720bd0
+Target LEVEL0 RTL --> Found 1 root devices, 1 total devices.
+Target LEVEL0 RTL --> List of devices (DeviceID[.SubDeviceLevel.SubDeviceID])
+Target LEVEL0 RTL --> -- 0
+Target LEVEL0 RTL --> ZE_CALLER: zeDriverGetApiVersion ( DeviceInfo->Driver, &DeviceInfo->DriverAPIVersion )
+Target LEVEL0 RTL --> ZE_CALLEE: zeDriverGetApiVersion (
+Target LEVEL0 RTL -->     hDriver = 0x00000000007207d0
+Target LEVEL0 RTL -->     version = 0x00000000005c07f0
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Driver API version is 10002
+Target LEVEL0 RTL --> Interop property IDs, Names, Descriptions
+Target LEVEL0 RTL --> -- 0, device_num_eus, intptr_t, total number of EUs
+Target LEVEL0 RTL --> -- 1, device_num_threads_per_eu, intptr_t, number of threads per EU
+Target LEVEL0 RTL --> -- 2, device_eu_simd_width, intptr_t, physical EU simd width
+Target LEVEL0 RTL --> -- 3, device_num_eus_per_subslice, intptr_t, number of EUs per sub-slice
+Target LEVEL0 RTL --> -- 4, device_num_subslices_per_slice, intptr_t, number of sub-slices per slice
+Target LEVEL0 RTL --> -- 5, device_num_slices, intptr_t, number of slices
+Target LEVEL0 RTL --> ZE_CALLER: zeContextCreate ( Driver, &contextDesc, &context )
+Target LEVEL0 RTL --> ZE_CALLEE: zeContextCreate (
+Target LEVEL0 RTL -->     hDriver = 0x00000000007207d0
+Target LEVEL0 RTL -->     desc = 0x00007ffd893efb60
+Target LEVEL0 RTL -->     phContext = 0x00007ffd893efc50
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeDriverGetExtensionFunctionAddress ( DeviceInfo->Driver, "zeGitsIndirectAllocationOffsets", &DeviceInfo->GitsIndirectAllocationOffsets )
+Target LEVEL0 RTL --> ZE_CALLEE: zeDriverGetExtensionFunctionAddress (
+Target LEVEL0 RTL -->     hDriver = 0x00000000007207d0
+Target LEVEL0 RTL -->     name = 0x00007f9dd0e26fe8
+Target LEVEL0 RTL -->     ppFunctionAddress = 0x00000000005c0bc0
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Returning 1 top-level devices
+Libomptarget --> Registering RTL libomptarget.rtl.level0.so supporting 1 devices!
+Libomptarget --> Optional interface: __tgt_rtl_data_alloc_base
+Libomptarget --> Optional interface: __tgt_rtl_data_alloc_managed
+Libomptarget --> Optional interface: __tgt_rtl_data_realloc
+Libomptarget --> Optional interface: __tgt_rtl_data_aligned_alloc
+Libomptarget --> Optional interface: __tgt_rtl_data_submit_nowait
+Libomptarget --> Optional interface: __tgt_rtl_data_retrieve_nowait
+Libomptarget --> Optional interface: __tgt_rtl_create_offload_queue
+Libomptarget --> Optional interface: __tgt_rtl_release_offload_queue
+Libomptarget --> Optional interface: __tgt_rtl_get_platform_handle
+Libomptarget --> Optional interface: __tgt_rtl_set_device_handle
+Libomptarget --> Optional interface: __tgt_rtl_get_context_handle
+Libomptarget --> Optional interface: __tgt_rtl_init_ompt
+Libomptarget --> Optional interface: __tgt_rtl_is_device_accessible_ptr
+Libomptarget --> Optional interface: __tgt_rtl_manifest_data_for_region
+Libomptarget --> Optional interface: __tgt_rtl_push_subdevice
+Libomptarget --> Optional interface: __tgt_rtl_pop_subdevice
+Libomptarget --> Optional interface: __tgt_rtl_add_build_options
+Libomptarget --> Optional interface: __tgt_rtl_is_supported_device
+Libomptarget --> Optional interface: __tgt_rtl_deinit
+Libomptarget --> Optional interface: __tgt_rtl_create_interop
+Libomptarget --> Optional interface: __tgt_rtl_release_interop
+Libomptarget --> Optional interface: __tgt_rtl_use_interop
+Libomptarget --> Optional interface: __tgt_rtl_get_num_interop_properties
+Libomptarget --> Optional interface: __tgt_rtl_get_interop_property_value
+Libomptarget --> Optional interface: __tgt_rtl_get_interop_property_info
+Libomptarget --> Optional interface: __tgt_rtl_get_interop_rc_desc
+Libomptarget --> Optional interface: __tgt_rtl_get_num_sub_devices
+Libomptarget --> Optional interface: __tgt_rtl_is_accessible_addr_range
+Libomptarget --> Optional interface: __tgt_rtl_notify_indirect_access
+Libomptarget --> Optional interface: __tgt_rtl_is_private_arg_on_host
+Libomptarget --> Optional interface: __tgt_rtl_command_batch_begin
+Libomptarget --> Optional interface: __tgt_rtl_command_batch_end
+Libomptarget --> Optional interface: __tgt_rtl_run_target_team_nd_region
+Libomptarget --> Optional interface: __tgt_rtl_run_target_region_nowait
+Libomptarget --> Optional interface: __tgt_rtl_run_target_team_region_nowait
+Libomptarget --> Optional interface: __tgt_rtl_run_target_team_nd_region_nowait
+Target LEVEL0 RTL --> Initialized OMPT
+Libomptarget --> Loading library 'libomptarget.rtl.opencl.so'...
+Target OPENCL RTL --> Init OpenCL plugin!
+Target OPENCL RTL --> omp_get_thread_limit() returned 2147483647
+Target OPENCL RTL --> omp_get_max_teams() returned 0
+Target OPENCL RTL --> Target device type is set to GPU
+Libomptarget --> Successfully loaded library 'libomptarget.rtl.opencl.so'!
+Target OPENCL RTL --> Start initializing OpenCL
+Target OPENCL RTL --> CL_CALLER: clGetPlatformIDs ( 0, nullptr, &platformIdCount )
+Target OPENCL RTL --> CL_CALLEE: clGetPlatformIDs (
+Target OPENCL RTL -->     num_entries = 0
+Target OPENCL RTL -->     platforms = 0x0000000000000000
+Target OPENCL RTL -->     num_platforms = 0x00007ffd893efc84
+Target OPENCL RTL --> )
+Target OPENCL RTL --> CL_CALLER: clGetPlatformIDs ( platformIdCount, platformIds.data(), nullptr )
+Target OPENCL RTL --> CL_CALLEE: clGetPlatformIDs (
+Target OPENCL RTL -->     num_entries = 3
+Target OPENCL RTL -->     platforms = 0x00000000009350e0
+Target OPENCL RTL -->     num_platforms = 0x0000000000000000
+Target OPENCL RTL --> )
+Target OPENCL RTL --> CL_CALLER: clGetPlatformInfo ( id, 0x0901, 0, nullptr, &buf_size )
+Target OPENCL RTL --> CL_CALLEE: clGetPlatformInfo (
+Target OPENCL RTL -->     platform = 0x00000000007a1ea8
+Target OPENCL RTL -->     param_name = 2305
+Target OPENCL RTL -->     param_value_size = 0
+Target OPENCL RTL -->     param_value = 0x0000000000000000
+Target OPENCL RTL -->     param_value_size_ret = 0x00007ffd893efbc8
+Target OPENCL RTL --> )
+Target OPENCL RTL --> CL_CALLER: clGetPlatformInfo ( id, 0x0901, buf_size, buf.data(), nullptr )
+Target OPENCL RTL --> CL_CALLEE: clGetPlatformInfo (
+Target OPENCL RTL -->     platform = 0x00000000007a1ea8
+Target OPENCL RTL -->     param_name = 2305
+Target OPENCL RTL -->     param_value_size = 58
+Target OPENCL RTL -->     param_value = 0x00000000009398f0
+Target OPENCL RTL -->     param_value_size_ret = 0x0000000000000000
+Target OPENCL RTL --> )
+Target OPENCL RTL --> CL_CALLER: clGetPlatformInfo ( id, 0x0901, 0, nullptr, &buf_size )
+Target OPENCL RTL --> CL_CALLEE: clGetPlatformInfo (
+Target OPENCL RTL -->     platform = 0x00000000007abd38
+Target OPENCL RTL -->     param_name = 2305
+Target OPENCL RTL -->     param_value_size = 0
+Target OPENCL RTL -->     param_value = 0x0000000000000000
+Target OPENCL RTL -->     param_value_size_ret = 0x00007ffd893efbc8
+Target OPENCL RTL --> )
+Target OPENCL RTL --> CL_CALLER: clGetPlatformInfo ( id, 0x0901, buf_size, buf.data(), nullptr )
+Target OPENCL RTL --> CL_CALLEE: clGetPlatformInfo (
+Target OPENCL RTL -->     platform = 0x00000000007abd38
+Target OPENCL RTL -->     param_name = 2305
+Target OPENCL RTL -->     param_value_size = 17
+Target OPENCL RTL -->     param_value = 0x0000000000937650
+Target OPENCL RTL -->     param_value_size_ret = 0x0000000000000000
+Target OPENCL RTL --> )
+Target OPENCL RTL --> CL_CALLER: clGetDeviceIDs ( id, DeviceInfo->DeviceType, 0, nullptr, &numDevices )
+Target OPENCL RTL --> CL_CALLEE: clGetDeviceIDs (
+Target OPENCL RTL -->     platform = 0x00000000007abd38
+Target OPENCL RTL -->     device_type = 4
+Target OPENCL RTL -->     num_entries = 0
+Target OPENCL RTL -->     devices = 0x0000000000000000
+Target OPENCL RTL -->     num_devices = 0x00007ffd893efbdc
+Target OPENCL RTL --> )
+Target OPENCL RTL --> CL_CALLER: clGetPlatformInfo ( id, 0x0901, 0, nullptr, &buf_size )
+Target OPENCL RTL --> CL_CALLEE: clGetPlatformInfo (
+Target OPENCL RTL -->     platform = 0x0000000000935130
+Target OPENCL RTL -->     param_name = 2305
+Target OPENCL RTL -->     param_value_size = 0
+Target OPENCL RTL -->     param_value = 0x0000000000000000
+Target OPENCL RTL -->     param_value_size_ret = 0x00007ffd893efbc8
+Target OPENCL RTL --> )
+Target OPENCL RTL --> CL_CALLER: clGetPlatformInfo ( id, 0x0901, buf_size, buf.data(), nullptr )
+Target OPENCL RTL --> CL_CALLEE: clGetPlatformInfo (
+Target OPENCL RTL -->     platform = 0x0000000000935130
+Target OPENCL RTL -->     param_name = 2305
+Target OPENCL RTL -->     param_value_size = 12
+Target OPENCL RTL -->     param_value = 0x0000000000939640
+Target OPENCL RTL -->     param_value_size_ret = 0x0000000000000000
+Target OPENCL RTL --> )
+Target OPENCL RTL --> CL_CALLER: clGetDeviceIDs ( id, DeviceInfo->DeviceType, 0, nullptr, &numDevices )
+Target OPENCL RTL --> CL_CALLEE: clGetDeviceIDs (
+Target OPENCL RTL -->     platform = 0x0000000000935130
+Target OPENCL RTL -->     device_type = 4
+Target OPENCL RTL -->     num_entries = 0
+Target OPENCL RTL -->     devices = 0x0000000000000000
+Target OPENCL RTL -->     num_devices = 0x00007ffd893efbdc
+Target OPENCL RTL --> )
+Target OPENCL RTL --> Platform OpenCL 3.0  has 1 Devices
+Target OPENCL RTL --> CL_CALLER: clGetDeviceIDs ( id, DeviceInfo->DeviceType, numDevices, devices.data(), nullptr )
+Target OPENCL RTL --> CL_CALLEE: clGetDeviceIDs (
+Target OPENCL RTL -->     platform = 0x0000000000935130
+Target OPENCL RTL -->     device_type = 4
+Target OPENCL RTL -->     num_entries = 1
+Target OPENCL RTL -->     devices = 0x0000000000939620
+Target OPENCL RTL -->     num_devices = 0x0000000000000000
+Target OPENCL RTL --> )
+Target OPENCL RTL --> CL_CALLER: clGetExtensionFunctionAddressForPlatform ( platform, ExtensionFunctionNames[i] )
+Target OPENCL RTL --> CL_CALLEE: clGetExtensionFunctionAddressForPlatform (
+Target OPENCL RTL -->     platform = 0x0000000000935130
+Target OPENCL RTL -->     funcname = 0x00007f9dcd67d1f3
+Target OPENCL RTL --> )
+Target OPENCL RTL --> Extension clGetMemAllocInfoINTEL is found.
+Target OPENCL RTL --> CL_CALLER: clGetExtensionFunctionAddressForPlatform ( platform, ExtensionFunctionNames[i] )
+Target OPENCL RTL --> CL_CALLEE: clGetExtensionFunctionAddressForPlatform (
+Target OPENCL RTL -->     platform = 0x0000000000935130
+Target OPENCL RTL -->     funcname = 0x00007f9dcd6cff93
+Target OPENCL RTL --> )
+Target OPENCL RTL --> Extension clHostMemAllocINTEL is found.
+Target OPENCL RTL --> CL_CALLER: clGetExtensionFunctionAddressForPlatform ( platform, ExtensionFunctionNames[i] )
+Target OPENCL RTL --> CL_CALLEE: clGetExtensionFunctionAddressForPlatform (
+Target OPENCL RTL -->     platform = 0x0000000000935130
+Target OPENCL RTL -->     funcname = 0x00007f9dcd690593
+Target OPENCL RTL --> )
+Target OPENCL RTL --> Extension clDeviceMemAllocINTEL is found.
+Target OPENCL RTL --> CL_CALLER: clGetExtensionFunctionAddressForPlatform ( platform, ExtensionFunctionNames[i] )
+Target OPENCL RTL --> CL_CALLEE: clGetExtensionFunctionAddressForPlatform (
+Target OPENCL RTL -->     platform = 0x0000000000935130
+Target OPENCL RTL -->     funcname = 0x00007f9dcd6dee1d
+Target OPENCL RTL --> )
+Target OPENCL RTL --> Extension clSharedMemAllocINTEL is found.
+Target OPENCL RTL --> CL_CALLER: clGetExtensionFunctionAddressForPlatform ( platform, ExtensionFunctionNames[i] )
+Target OPENCL RTL --> CL_CALLEE: clGetExtensionFunctionAddressForPlatform (
+Target OPENCL RTL -->     platform = 0x0000000000935130
+Target OPENCL RTL -->     funcname = 0x00007f9dcd6906dc
+Target OPENCL RTL --> )
+Target OPENCL RTL --> Extension clMemFreeINTEL is found.
+Target OPENCL RTL --> CL_CALLER: clGetExtensionFunctionAddressForPlatform ( platform, ExtensionFunctionNames[i] )
+Target OPENCL RTL --> CL_CALLEE: clGetExtensionFunctionAddressForPlatform (
+Target OPENCL RTL -->     platform = 0x0000000000935130
+Target OPENCL RTL -->     funcname = 0x00007f9dcd6b9e76
+Target OPENCL RTL --> )
+Target OPENCL RTL --> Extension clSetKernelArgMemPointerINTEL is found.
+Target OPENCL RTL --> CL_CALLER: clGetExtensionFunctionAddressForPlatform ( platform, ExtensionFunctionNames[i] )
+Target OPENCL RTL --> CL_CALLEE: clGetExtensionFunctionAddressForPlatform (
+Target OPENCL RTL -->     platform = 0x0000000000935130
+Target OPENCL RTL -->     funcname = 0x00007f9dcd6ae426
+Target OPENCL RTL --> )
+Target OPENCL RTL --> Extension clEnqueueMemcpyINTEL is found.
+Target OPENCL RTL --> CL_CALLER: clGetExtensionFunctionAddressForPlatform ( platform, ExtensionFunctionNames[i] )
+Target OPENCL RTL --> CL_CALLEE: clGetExtensionFunctionAddressForPlatform (
+Target OPENCL RTL -->     platform = 0x0000000000935130
+Target OPENCL RTL -->     funcname = 0x00007f9dcd6e64a2
+Target OPENCL RTL --> )
+Target OPENCL RTL --> Extension clSetProgramSpecializationConstant is found.
+Target OPENCL RTL --> CL_CALLER: clGetExtensionFunctionAddressForPlatform ( platform, ExtensionFunctionNames[i] )
+Target OPENCL RTL --> CL_CALLEE: clGetExtensionFunctionAddressForPlatform (
+Target OPENCL RTL -->     platform = 0x0000000000935130
+Target OPENCL RTL -->     funcname = 0x00007f9dcd6e2d6e
+Target OPENCL RTL --> )
+Target OPENCL RTL --> Extension clGetDeviceGlobalVariablePointerINTEL is found.
+Target OPENCL RTL --> CL_CALLER: clGetExtensionFunctionAddressForPlatform ( platform, ExtensionFunctionNames[i] )
+Target OPENCL RTL --> CL_CALLEE: clGetExtensionFunctionAddressForPlatform (
+Target OPENCL RTL -->     platform = 0x0000000000935130
+Target OPENCL RTL -->     funcname = 0x00007f9dcd6d760a
+Target OPENCL RTL --> )
+Target OPENCL RTL --> Extension clGetKernelSuggestedLocalWorkSizeINTEL is found.
+Target OPENCL RTL --> CL_CALLER: clGetExtensionFunctionAddressForPlatform ( platform, ExtensionFunctionNames[i] )
+Target OPENCL RTL --> CL_CALLEE: clGetExtensionFunctionAddressForPlatform (
+Target OPENCL RTL -->     platform = 0x0000000000935130
+Target OPENCL RTL -->     funcname = 0x00007f9dcd6b233b
+Target OPENCL RTL --> )
+Target OPENCL RTL --> Warning: Extension clGitsIndirectAllocationOffsets is not found.
+Target OPENCL RTL --> CL_CALLER: clGetDeviceInfo ( deviceId, 0x102B, 0, nullptr, &buf_size )
+Target OPENCL RTL --> CL_CALLEE: clGetDeviceInfo (
+Target OPENCL RTL -->     device = 0x0000000000935200
+Target OPENCL RTL -->     param_name = 4139
+Target OPENCL RTL -->     param_value_size = 0
+Target OPENCL RTL -->     param_value = 0x0000000000000000
+Target OPENCL RTL -->     param_value_size_ret = 0x00007ffd893efc90
+Target OPENCL RTL --> )
+Target OPENCL RTL --> CL_CALLER: clGetDeviceInfo ( deviceId, 0x102B, buf_size, DeviceInfo->Names[i].data(), nullptr )
+Target OPENCL RTL --> CL_CALLEE: clGetDeviceInfo (
+Target OPENCL RTL -->     device = 0x0000000000935200
+Target OPENCL RTL -->     param_name = 4139
+Target OPENCL RTL -->     param_value_size = 36
+Target OPENCL RTL -->     param_value = 0x00000000009374e0
+Target OPENCL RTL -->     param_value_size_ret = 0x0000000000000000
+Target OPENCL RTL --> )
+Target OPENCL RTL --> Device 0: Intel(R) UHD Graphics P630 [0x3e96]
+Target OPENCL RTL --> CL_CALLER: clGetDeviceInfo ( deviceId, 0x1002, 4, &DeviceInfo->maxExecutionUnits[i], nullptr )
+Target OPENCL RTL --> CL_CALLEE: clGetDeviceInfo (
+Target OPENCL RTL -->     device = 0x0000000000935200
+Target OPENCL RTL -->     param_name = 4098
+Target OPENCL RTL -->     param_value_size = 4
+Target OPENCL RTL -->     param_value = 0x0000000000939620
+Target OPENCL RTL -->     param_value_size_ret = 0x0000000000000000
+Target OPENCL RTL --> )
+Target OPENCL RTL --> Number of execution units on the device is 24
+Target OPENCL RTL --> CL_CALLER: clGetDeviceInfo ( deviceId, 0x1004, sizeof(size_t), &DeviceInfo->maxWorkGroupSize[i], nullptr )
+Target OPENCL RTL --> CL_CALLEE: clGetDeviceInfo (
+Target OPENCL RTL -->     device = 0x0000000000935200
+Target OPENCL RTL -->     param_name = 4100
+Target OPENCL RTL -->     param_value_size = 8
+Target OPENCL RTL -->     param_value = 0x0000000000939750
+Target OPENCL RTL -->     param_value_size_ret = 0x0000000000000000
+Target OPENCL RTL --> )
+Target OPENCL RTL --> Maximum work group size for the device is 256
+Target OPENCL RTL --> CL_CALLER: clGetDeviceInfo ( deviceId, 0x1010, sizeof(cl_ulong), &DeviceInfo->MaxMemAllocSize[i], nullptr )
+Target OPENCL RTL --> CL_CALLEE: clGetDeviceInfo (
+Target OPENCL RTL -->     device = 0x0000000000935200
+Target OPENCL RTL -->     param_name = 4112
+Target OPENCL RTL -->     param_value_size = 8
+Target OPENCL RTL -->     param_value = 0x0000000000939770
+Target OPENCL RTL -->     param_value_size_ret = 0x0000000000000000
+Target OPENCL RTL --> )
+Target OPENCL RTL --> Maximum memory allocation size is 4294959104
+Target OPENCL RTL --> CL_CALLER: clGetDeviceInfo ( deviceId, 0x100D, 4, &addressmode, nullptr )
+Target OPENCL RTL --> CL_CALLEE: clGetDeviceInfo (
+Target OPENCL RTL -->     device = 0x0000000000935200
+Target OPENCL RTL -->     param_name = 4109
+Target OPENCL RTL -->     param_value_size = 4
+Target OPENCL RTL -->     param_value = 0x00007ffd893efbb0
+Target OPENCL RTL -->     param_value_size_ret = 0x0000000000000000
+Target OPENCL RTL --> )
+Target OPENCL RTL --> Addressing mode is 64 bit
+Target OPENCL RTL --> CL_CALLER: clGetDeviceInfo ( deviceId, 0x1023, sizeof(cl_ulong), &DeviceInfo->SLMSize[i], nullptr )
+Target OPENCL RTL --> CL_CALLEE: clGetDeviceInfo (
+Target OPENCL RTL -->     device = 0x0000000000935200
+Target OPENCL RTL -->     param_name = 4131
+Target OPENCL RTL -->     param_value_size = 8
+Target OPENCL RTL -->     param_value = 0x00000000009398d0
+Target OPENCL RTL -->     param_value_size_ret = 0x0000000000000000
+Target OPENCL RTL --> )
+Target OPENCL RTL --> Device local mem size: 65536
+Libomptarget --> Registering RTL libomptarget.rtl.opencl.so supporting 1 devices!
+Libomptarget --> Optional interface: __tgt_rtl_data_alloc_base
+Libomptarget --> Optional interface: __tgt_rtl_data_alloc_managed
+Libomptarget --> Optional interface: __tgt_rtl_data_realloc
+Libomptarget --> Optional interface: __tgt_rtl_data_aligned_alloc
+Libomptarget --> Optional interface: __tgt_rtl_data_submit_nowait
+Libomptarget --> Optional interface: __tgt_rtl_data_retrieve_nowait
+Libomptarget --> Optional interface: __tgt_rtl_create_offload_queue
+Libomptarget --> Optional interface: __tgt_rtl_release_offload_queue
+Libomptarget --> Optional interface: __tgt_rtl_get_device_name
+Libomptarget --> Optional interface: __tgt_rtl_get_platform_handle
+Libomptarget --> Optional interface: __tgt_rtl_set_device_handle
+Libomptarget --> Optional interface: __tgt_rtl_get_context_handle
+Libomptarget --> Optional interface: __tgt_rtl_get_data_alloc_info
+Libomptarget --> Optional interface: __tgt_rtl_init_ompt
+Libomptarget --> Optional interface: __tgt_rtl_is_device_accessible_ptr
+Libomptarget --> Optional interface: __tgt_rtl_manifest_data_for_region
+Libomptarget --> Optional interface: __tgt_rtl_add_build_options
+Libomptarget --> Optional interface: __tgt_rtl_is_supported_device
+Libomptarget --> Optional interface: __tgt_rtl_deinit
+Libomptarget --> Optional interface: __tgt_rtl_create_interop
+Libomptarget --> Optional interface: __tgt_rtl_release_interop
+Libomptarget --> Optional interface: __tgt_rtl_use_interop
+Libomptarget --> Optional interface: __tgt_rtl_get_num_interop_properties
+Libomptarget --> Optional interface: __tgt_rtl_get_interop_property_value
+Libomptarget --> Optional interface: __tgt_rtl_get_interop_property_info
+Libomptarget --> Optional interface: __tgt_rtl_get_interop_rc_desc
+Libomptarget --> Optional interface: __tgt_rtl_is_accessible_addr_range
+Libomptarget --> Optional interface: __tgt_rtl_notify_indirect_access
+Libomptarget --> Optional interface: __tgt_rtl_is_private_arg_on_host
+Libomptarget --> Optional interface: __tgt_rtl_run_target_team_nd_region
+Libomptarget --> Optional interface: __tgt_rtl_run_target_region_nowait
+Libomptarget --> Optional interface: __tgt_rtl_run_target_team_region_nowait
+Libomptarget --> Optional interface: __tgt_rtl_run_target_team_nd_region_nowait
+Target OPENCL RTL --> Initialized OMPT
+Libomptarget --> Loading library 'libomptarget.rtl.ppc64.so'...
+Libomptarget --> Unable to load library 'libomptarget.rtl.ppc64.so': libomptarget.rtl.ppc64.so: cannot open shared object file: No such file or directory!
+Libomptarget --> Loading library 'libomptarget.rtl.x86_64.so'...
+Libomptarget --> Successfully loaded library 'libomptarget.rtl.x86_64.so'!
+Libomptarget --> Registering RTL libomptarget.rtl.x86_64.so supporting 4 devices!
+Libomptarget --> Loading library 'libomptarget.rtl.cuda.so'...
+Libomptarget --> Unable to load library 'libomptarget.rtl.cuda.so': libomptarget.rtl.cuda.so: cannot open shared object file: No such file or directory!
+Libomptarget --> Loading library 'libomptarget.rtl.aarch64.so'...
+Libomptarget --> Unable to load library 'libomptarget.rtl.aarch64.so': libomptarget.rtl.aarch64.so: cannot open shared object file: No such file or directory!
+Libomptarget --> Loading library 'libomptarget.rtl.ve.so'...
+Libomptarget --> Unable to load library 'libomptarget.rtl.ve.so': libomptarget.rtl.ve.so: cannot open shared object file: No such file or directory!
+Libomptarget --> Loading library 'libomptarget.rtl.amdgpu.so'...
+Libomptarget --> Unable to load library 'libomptarget.rtl.amdgpu.so': libomptarget.rtl.amdgpu.so: cannot open shared object file: No such file or directory!
+Libomptarget --> Loading library 'libomptarget.rtl.rpc.so'...
+Libomptarget --> Unable to load library 'libomptarget.rtl.rpc.so': libomptarget.rtl.rpc.so: cannot open shared object file: No such file or directory!
+Libomptarget --> RTLs loaded!
+Target LEVEL0 RTL --> Target binary is a valid oneAPI OpenMP image.
+Libomptarget --> Image 0x0000000000402400 is compatible with RTL libomptarget.rtl.level0.so!
+Libomptarget --> RTL 0x00000000005aa570 has index 0!
+Libomptarget --> Registering image 0x0000000000402400 with RTL libomptarget.rtl.level0.so!
+Libomptarget --> Done registering entries!
+Libomptarget --> Call to omp_get_num_devices returning 1
+There are 1 non-host devices.
+Libomptarget --> Entering target region with entry point 0x00000000004021d0 and device Id 0
+Libomptarget --> Call to omp_get_num_devices returning 1
+Libomptarget --> Call to omp_get_num_devices returning 1
+Libomptarget --> Call to omp_get_initial_device returning 1
+Libomptarget --> Checking whether device 0 is ready.
+Libomptarget --> Is the device 0 (local ID 0) initialized? 0
+Target LEVEL0 RTL --> Initialize requires flags to 1
+Target LEVEL0 RTL --> ZE_CALLER: zeMemAllocHost ( context, &hostDesc, Size, Align, &mem )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemAllocHost (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     host_desc = 0x00007ffd893ef700
+Target LEVEL0 RTL -->     size = 8
+Target LEVEL0 RTL -->     alignment = 0
+Target LEVEL0 RTL -->     pptr = 0x00007ffd893ef6f0
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Allocated a host memory object 0x000000000093f000
+Target LEVEL0 RTL --> ZE_CALLER: zeMemGetAddressRange ( Context, mem, nullptr, &AllocUnit )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemGetAddressRange (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0x000000000093f000
+Target LEVEL0 RTL -->     pBase = 0x0000000000000000
+Target LEVEL0 RTL -->     pSize = 0x00000000005c0a10
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeMemFree ( Context, mem )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemFree (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0x000000000093f000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Initialized host memory pool for device 0x0000000000000000: AllocMax = 1048576, Capacity = 4, PoolSizeMax = 268435456
+Target LEVEL0 RTL --> ZE_CALLER: zeDeviceGetProperties ( Device, &properties )
+Target LEVEL0 RTL --> ZE_CALLEE: zeDeviceGetProperties (
+Target LEVEL0 RTL -->     hDevice = 0x0000000000720bd0
+Target LEVEL0 RTL -->     pDeviceProperties = 0x00007ffd893ef7d8
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeMemAllocShared ( context, &deviceDesc, &hostDesc, Size, Align, Device, &mem )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemAllocShared (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     device_desc = 0x00007ffd893ef720
+Target LEVEL0 RTL -->     host_desc = 0x00007ffd893ef700
+Target LEVEL0 RTL -->     size = 8
+Target LEVEL0 RTL -->     alignment = 0
+Target LEVEL0 RTL -->     hDevice = 0x0000000000720bd0
+Target LEVEL0 RTL -->     pptr = 0x00007ffd893ef6f0
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Allocated a shared memory object 0x000000000093f000
+Target LEVEL0 RTL --> ZE_CALLER: zeMemGetAddressRange ( Context, mem, nullptr, &AllocUnit )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemGetAddressRange (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0x000000000093f000
+Target LEVEL0 RTL -->     pBase = 0x0000000000000000
+Target LEVEL0 RTL -->     pSize = 0x0000000000794c50
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeMemFree ( Context, mem )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemFree (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0x000000000093f000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Initialized shared memory pool for device 0x0000000000720bd0: AllocMax = 1048576, Capacity = 4, PoolSizeMax = 268435456
+Target LEVEL0 RTL --> ZE_CALLER: zeMemAllocDevice ( context, &deviceDesc, Size, Align, Device, &mem )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemAllocDevice (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     device_desc = 0x00007ffd893ef720
+Target LEVEL0 RTL -->     size = 8
+Target LEVEL0 RTL -->     alignment = 0
+Target LEVEL0 RTL -->     hDevice = 0x0000000000720bd0
+Target LEVEL0 RTL -->     pptr = 0x00007ffd893ef6f0
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Allocated a device memory object 0xffffd556aa7e0000
+Target LEVEL0 RTL --> ZE_CALLER: zeMemGetAddressRange ( Context, mem, nullptr, &AllocUnit )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemGetAddressRange (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0xffffd556aa7e0000
+Target LEVEL0 RTL -->     pBase = 0x0000000000000000
+Target LEVEL0 RTL -->     pSize = 0x0000000000794d50
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeMemFree ( Context, mem )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemFree (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0xffffd556aa7e0000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Initialized device memory pool for device 0x0000000000720bd0: AllocMax = 1048576, Capacity = 4, PoolSizeMax = 268435456
+Target LEVEL0 RTL --> Initialized Level0 device 0
+Libomptarget --> Device 0 is ready to use.
+Target LEVEL0 RTL --> Device 0: Loading binary from 0x0000000000402400
+Target LEVEL0 RTL --> Expecting to have 1 entries defined
+Target LEVEL0 RTL --> Base L0 module compilation options: -cl-std=CL2.0  
+Target LEVEL0 RTL --> ZE_CALLER: zeModuleCreate ( Context, Device, &moduleDesc, &module, &buildLog )
+Target LEVEL0 RTL --> ZE_CALLEE: zeModuleCreate (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     hDevice = 0x0000000000720bd0
+Target LEVEL0 RTL -->     desc = 0x00007ffd893ef720
+Target LEVEL0 RTL -->     phModule = 0x00007ffd893ef708
+Target LEVEL0 RTL -->     phBuildLog = 0x00007ffd893ef6f0
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeModuleBuildLogDestroy ( buildLog )
+Target LEVEL0 RTL --> ZE_CALLEE: zeModuleBuildLogDestroy (
+Target LEVEL0 RTL -->     hModuleBuildLog = 0x00000000007b1300
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Created module from image #0.
+Target LEVEL0 RTL --> Looking up device global variable '__omp_offloading_entries_table_size' of size 8 bytes on device 0.
+Target LEVEL0 RTL --> ZE_CALLER: zeModuleGetGlobalPointer ( FuncGblEntries[DeviceId].back().Modules[0], Name, &TgtSize, &TgtAddr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeModuleGetGlobalPointer (
+Target LEVEL0 RTL -->     hModule = 0x00000000007aff20
+Target LEVEL0 RTL -->     pGlobalName = 0x00007f9dd0e35f0c
+Target LEVEL0 RTL -->     pSize = 0x00007ffd893ef7c0
+Target LEVEL0 RTL -->     pptr = 0x00007ffd893ef7c8
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Global variable lookup succeeded (size: 8 bytes).
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandListCreate ( Context, Device, &cmdListDesc, &cmdList )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandListCreate (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     hDevice = 0x0000000000720bd0
+Target LEVEL0 RTL -->     desc = 0x00007ffd893ef710
+Target LEVEL0 RTL -->     phCommandList = 0x00007ffd893ef6f8
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Created a command list 0x0000000000956820 (Ordinal: 0) for device 0.
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandQueueCreate ( Context, Device, &cmdQueueDesc, &cmdQueue )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandQueueCreate (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     hDevice = 0x0000000000720bd0
+Target LEVEL0 RTL -->     desc = 0x00007ffd893ef700
+Target LEVEL0 RTL -->     phCommandQueue = 0x00007ffd893ef6e0
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Created a command queue 0x00000000013465c0 (Ordinal: 0, Index: 0) for device 0.
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandListAppendMemoryCopy ( cmdList, Dst, Src, Size, nullptr, 0, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandListAppendMemoryCopy (
+Target LEVEL0 RTL -->     hCommandList = 0x0000000000956820
+Target LEVEL0 RTL -->     dstptr = 0x00007ffd893ef860
+Target LEVEL0 RTL -->     srcptr = 0x00007f9dad01b768
+Target LEVEL0 RTL -->     size = 8
+Target LEVEL0 RTL -->     hEvent = 0x0000000000000000
+Target LEVEL0 RTL -->     numWaitEvents = 0
+Target LEVEL0 RTL -->     phWaitEvents = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandListClose ( cmdList )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandListClose (
+Target LEVEL0 RTL -->     hCommandList = 0x0000000000956820
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandQueueExecuteCommandLists ( cmdQueue, 1, &cmdList, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandQueueExecuteCommandLists (
+Target LEVEL0 RTL -->     hCommandQueue = 0x00000000013465c0
+Target LEVEL0 RTL -->     numCommandLists = 1
+Target LEVEL0 RTL -->     phCommandLists = 0x00007ffd893ef7c8
+Target LEVEL0 RTL -->     hFence = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandQueueSynchronize ( cmdQueue, (18446744073709551615UL) )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandQueueSynchronize (
+Target LEVEL0 RTL -->     hCommandQueue = 0x00000000013465c0
+Target LEVEL0 RTL -->     timeout = 18446744073709551615
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandListReset ( cmdList )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandListReset (
+Target LEVEL0 RTL -->     hCommandList = 0x0000000000956820
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Looking up device global variable '__omp_offloading_entries_table' of size 40 bytes on device 0.
+Target LEVEL0 RTL --> ZE_CALLER: zeModuleGetGlobalPointer ( FuncGblEntries[DeviceId].back().Modules[0], Name, &TgtSize, &TgtAddr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeModuleGetGlobalPointer (
+Target LEVEL0 RTL -->     hModule = 0x00000000007aff20
+Target LEVEL0 RTL -->     pGlobalName = 0x00007f9dd0e35f30
+Target LEVEL0 RTL -->     pSize = 0x00007ffd893ef7c0
+Target LEVEL0 RTL -->     pptr = 0x00007ffd893ef7c8
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Global variable lookup succeeded (size: 40 bytes).
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandListAppendMemoryCopy ( cmdList, Dst, Src, Size, nullptr, 0, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandListAppendMemoryCopy (
+Target LEVEL0 RTL -->     hCommandList = 0x0000000000956820
+Target LEVEL0 RTL -->     dstptr = 0x000000000094f780
+Target LEVEL0 RTL -->     srcptr = 0x00007f9dad01b740
+Target LEVEL0 RTL -->     size = 40
+Target LEVEL0 RTL -->     hEvent = 0x0000000000000000
+Target LEVEL0 RTL -->     numWaitEvents = 0
+Target LEVEL0 RTL -->     phWaitEvents = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandListClose ( cmdList )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandListClose (
+Target LEVEL0 RTL -->     hCommandList = 0x0000000000956820
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandQueueExecuteCommandLists ( cmdQueue, 1, &cmdList, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandQueueExecuteCommandLists (
+Target LEVEL0 RTL -->     hCommandQueue = 0x00000000013465c0
+Target LEVEL0 RTL -->     numCommandLists = 1
+Target LEVEL0 RTL -->     phCommandLists = 0x00007ffd893ef7c8
+Target LEVEL0 RTL -->     hFence = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandQueueSynchronize ( cmdQueue, (18446744073709551615UL) )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandQueueSynchronize (
+Target LEVEL0 RTL -->     hCommandQueue = 0x00000000013465c0
+Target LEVEL0 RTL -->     timeout = 18446744073709551615
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandListReset ( cmdList )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandListReset (
+Target LEVEL0 RTL -->     hCommandList = 0x0000000000956820
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandListAppendMemoryCopy ( cmdList, Dst, Src, Size, nullptr, 0, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandListAppendMemoryCopy (
+Target LEVEL0 RTL -->     hCommandList = 0x0000000000956820
+Target LEVEL0 RTL -->     dstptr = 0x00000000009591d0
+Target LEVEL0 RTL -->     srcptr = 0x0000000001380000
+Target LEVEL0 RTL -->     size = 44
+Target LEVEL0 RTL -->     hEvent = 0x0000000000000000
+Target LEVEL0 RTL -->     numWaitEvents = 0
+Target LEVEL0 RTL -->     phWaitEvents = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandListClose ( cmdList )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandListClose (
+Target LEVEL0 RTL -->     hCommandList = 0x0000000000956820
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandQueueExecuteCommandLists ( cmdQueue, 1, &cmdList, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandQueueExecuteCommandLists (
+Target LEVEL0 RTL -->     hCommandQueue = 0x00000000013465c0
+Target LEVEL0 RTL -->     numCommandLists = 1
+Target LEVEL0 RTL -->     phCommandLists = 0x00007ffd893ef7c8
+Target LEVEL0 RTL -->     hFence = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandQueueSynchronize ( cmdQueue, (18446744073709551615UL) )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandQueueSynchronize (
+Target LEVEL0 RTL -->     hCommandQueue = 0x00000000013465c0
+Target LEVEL0 RTL -->     timeout = 18446744073709551615
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandListReset ( cmdList )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandListReset (
+Target LEVEL0 RTL -->     hCommandList = 0x0000000000956820
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Device offload table loaded:
+Target LEVEL0 RTL --> 	0:	__omp_offloading_3a_d5ef4b2c__Z7Compute_l28
+Target LEVEL0 RTL --> ZE_CALLER: zeKernelCreate ( mainModule, &kernelDesc, &kernels[i] )
+Target LEVEL0 RTL --> ZE_CALLEE: zeKernelCreate (
+Target LEVEL0 RTL -->     hModule = 0x00000000007aff20
+Target LEVEL0 RTL -->     desc = 0x00007ffd893ef8f0
+Target LEVEL0 RTL -->     phKernel = 0x00000000007b15b0
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Looking up device global variable '__omp_offloading_3a_d5ef4b2c__Z7Compute_l28_kernel_info' of unknown size on device 0.
+Target LEVEL0 RTL --> ZE_CALLER: zeModuleGetGlobalPointer ( FuncGblEntries[DeviceId].back().Modules[0], Name, &TgtSize, &TgtAddr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeModuleGetGlobalPointer (
+Target LEVEL0 RTL -->     hModule = 0x00000000007aff20
+Target LEVEL0 RTL -->     pGlobalName = 0x0000000001426c70
+Target LEVEL0 RTL -->     pSize = 0x00007ffd893ef790
+Target LEVEL0 RTL -->     pptr = 0x00007ffd893ef798
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Global variable lookup succeeded (size: 64 bytes).
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandListAppendMemoryCopy ( cmdList, Dst, Src, Size, nullptr, 0, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandListAppendMemoryCopy (
+Target LEVEL0 RTL -->     hCommandList = 0x0000000000956820
+Target LEVEL0 RTL -->     dstptr = 0x00000000011e7ff0
+Target LEVEL0 RTL -->     srcptr = 0x00007f9dacff7000
+Target LEVEL0 RTL -->     size = 64
+Target LEVEL0 RTL -->     hEvent = 0x0000000000000000
+Target LEVEL0 RTL -->     numWaitEvents = 0
+Target LEVEL0 RTL -->     phWaitEvents = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandListClose ( cmdList )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandListClose (
+Target LEVEL0 RTL -->     hCommandList = 0x0000000000956820
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandQueueExecuteCommandLists ( cmdQueue, 1, &cmdList, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandQueueExecuteCommandLists (
+Target LEVEL0 RTL -->     hCommandQueue = 0x00000000013465c0
+Target LEVEL0 RTL -->     numCommandLists = 1
+Target LEVEL0 RTL -->     phCommandLists = 0x00007ffd893ef798
+Target LEVEL0 RTL -->     hFence = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandQueueSynchronize ( cmdQueue, (18446744073709551615UL) )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandQueueSynchronize (
+Target LEVEL0 RTL -->     hCommandQueue = 0x00000000013465c0
+Target LEVEL0 RTL -->     timeout = 18446744073709551615
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandListReset ( cmdList )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandListReset (
+Target LEVEL0 RTL -->     hCommandList = 0x0000000000956820
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeKernelGetProperties ( kernels[i], &kernelProperties )
+Target LEVEL0 RTL --> ZE_CALLEE: zeKernelGetProperties (
+Target LEVEL0 RTL -->     hKernel = 0x0000000001419be0
+Target LEVEL0 RTL -->     pKernelProperties = 0x00007ffd893ef9c0
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Kernel 0: Entry = 0x00000000004021d0, Name = __omp_offloading_3a_d5ef4b2c__Z7Compute_l28, NumArgs = 5, Handle = 0x0000000001419be0
+Target LEVEL0 RTL --> Looking up device global variable '__omp_spirv_program_data' of size 48 bytes on device 0.
+Target LEVEL0 RTL --> ZE_CALLER: zeModuleGetGlobalPointer ( FuncGblEntries[DeviceId].back().Modules[0], Name, &TgtSize, &TgtAddr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeModuleGetGlobalPointer (
+Target LEVEL0 RTL -->     hModule = 0x00000000007aff20
+Target LEVEL0 RTL -->     pGlobalName = 0x00007f9dd0e1bf52
+Target LEVEL0 RTL -->     pSize = 0x00007ffd893ef7e0
+Target LEVEL0 RTL -->     pptr = 0x00007ffd893ef7e8
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Global variable lookup succeeded (size: 48 bytes).
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandListAppendMemoryCopy ( cmdList, Dst, Src, Size, nullptr, 0, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandListAppendMemoryCopy (
+Target LEVEL0 RTL -->     hCommandList = 0x0000000000956820
+Target LEVEL0 RTL -->     dstptr = 0x00007f9dad01b710
+Target LEVEL0 RTL -->     srcptr = 0x00007ffd893ef858
+Target LEVEL0 RTL -->     size = 48
+Target LEVEL0 RTL -->     hEvent = 0x0000000000000000
+Target LEVEL0 RTL -->     numWaitEvents = 0
+Target LEVEL0 RTL -->     phWaitEvents = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandListClose ( cmdList )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandListClose (
+Target LEVEL0 RTL -->     hCommandList = 0x0000000000956820
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandQueueExecuteCommandLists ( cmdQueue, 1, &cmdList, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandQueueExecuteCommandLists (
+Target LEVEL0 RTL -->     hCommandQueue = 0x00000000013465c0
+Target LEVEL0 RTL -->     numCommandLists = 1
+Target LEVEL0 RTL -->     phCommandLists = 0x00007ffd893ef7e8
+Target LEVEL0 RTL -->     hFence = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandQueueSynchronize ( cmdQueue, (18446744073709551615UL) )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandQueueSynchronize (
+Target LEVEL0 RTL -->     hCommandQueue = 0x00000000013465c0
+Target LEVEL0 RTL -->     timeout = 18446744073709551615
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandListReset ( cmdList )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandListReset (
+Target LEVEL0 RTL -->     hCommandList = 0x0000000000956820
+Target LEVEL0 RTL --> )
+Libomptarget --> Entry  0: Base=0x00000000004281b0, Begin=0x00000000004281b0, Size=65536, Type=0x23, Name=C
+Libomptarget --> Entry  1: Base=0x00000000004081b0, Begin=0x00000000004081b0, Size=65536, Type=0x21, Name=A
+Libomptarget --> Entry  2: Base=0x00000000004181b0, Begin=0x00000000004181b0, Size=65536, Type=0x21, Name=B
+Libomptarget --> Entry  3: Base=0x0000000000000000, Begin=0x0000000000000000, Size=0, Type=0x120, Name=unknown
+Libomptarget --> Entry  4: Base=0x000000000000007f, Begin=0x000000000000007f, Size=0, Type=0x120, Name=unknown
+Libomptarget --> Entry  5: Base=0x00007ffd893efd70, Begin=0x00007ffd893efd70, Size=32, Type=0x800, Name=unknown
+Libomptarget --> Looking up mapping(HstPtrBegin=0x00000000004281b0, Size=65536)...
+Target LEVEL0 RTL --> ZE_CALLER: zeMemGetAllocProperties ( Context, Ptr, &properties, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemGetAllocProperties (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0x00000000004281b0
+Target LEVEL0 RTL -->     pMemAllocProperties = 0x00007ffd893ef730
+Target LEVEL0 RTL -->     phDevice = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Ptr 0x00000000004281b0 is not a device accessible memory pointer.
+Target LEVEL0 RTL --> ZE_CALLER: zeMemAllocShared ( context, &deviceDesc, &hostDesc, Size, Align, Device, &mem )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemAllocShared (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     device_desc = 0x00007ffd893ef5b0
+Target LEVEL0 RTL -->     host_desc = 0x00007ffd893ef590
+Target LEVEL0 RTL -->     size = 262144
+Target LEVEL0 RTL -->     alignment = 0
+Target LEVEL0 RTL -->     hDevice = 0x0000000000720bd0
+Target LEVEL0 RTL -->     pptr = 0x00007ffd893ef580
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Allocated a shared memory object 0x00000000010c4000
+Target LEVEL0 RTL --> ZE_CALLER: zeMemGetAddressRange ( DeviceInfo->Context, Ptr, &base, &size )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemGetAddressRange (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0x00000000010c4000
+Target LEVEL0 RTL -->     pBase = 0x00007ffd893ef520
+Target LEVEL0 RTL -->     pSize = 0x00007ffd893ef500
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeMemGetAllocProperties ( Context, Ptr, &properties, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemGetAllocProperties (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0x00000000010c4000
+Target LEVEL0 RTL -->     pMemAllocProperties = 0x00007ffd893ef490
+Target LEVEL0 RTL -->     phDevice = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> New block allocation for shared memory pool: base = 0x00000000010c4000, size = 262144, pool size = 262144
+Target LEVEL0 RTL --> ZE_CALLER: zeMemGetAllocProperties ( Context, Ptr, &properties, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemGetAllocProperties (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0x00000000010c4000
+Target LEVEL0 RTL -->     pMemAllocProperties = 0x00007ffd893ef550
+Target LEVEL0 RTL -->     phDevice = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Allocated target memory 0x00000000010c4000 (Base: 0x00000000010c4000, Size: 65536) from memory pool for host ptr 0x00000000004281b0
+Libomptarget --> Creating new map entry with HstPtrBegin=0x00000000004281b0, TgtPtrBegin=0x00000000010c4000, Size=65536, DynRefCount=1, HoldRefCount=0, Name=C
+Libomptarget --> Moving 65536 bytes (hst:0x00000000004281b0) -> (tgt:0x00000000010c4000)
+Target LEVEL0 RTL --> ZE_CALLER: zeMemGetAllocProperties ( Context, Ptr, &properties, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemGetAllocProperties (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0x00000000010c4000
+Target LEVEL0 RTL -->     pMemAllocProperties = 0x00007ffd893ef5b0
+Target LEVEL0 RTL -->     phDevice = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeMemGetAllocProperties ( Context, Ptr, &properties, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemGetAllocProperties (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0x00000000004281b0
+Target LEVEL0 RTL -->     pMemAllocProperties = 0x00007ffd893ef5b0
+Target LEVEL0 RTL -->     phDevice = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Copied 65536 bytes (hst:0x00000000004281b0) -> (tgt:0x00000000010c4000)
+Libomptarget --> There are 65536 bytes allocated at target address 0x00000000010c4000 - is new
+Libomptarget --> Looking up mapping(HstPtrBegin=0x00000000004081b0, Size=65536)...
+Target LEVEL0 RTL --> ZE_CALLER: zeMemGetAllocProperties ( Context, Ptr, &properties, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemGetAllocProperties (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0x00000000004081b0
+Target LEVEL0 RTL -->     pMemAllocProperties = 0x00007ffd893ef730
+Target LEVEL0 RTL -->     phDevice = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Ptr 0x00000000004081b0 is not a device accessible memory pointer.
+Target LEVEL0 RTL --> ZE_CALLER: zeMemGetAllocProperties ( Context, Ptr, &properties, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemGetAllocProperties (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0x00000000010d4000
+Target LEVEL0 RTL -->     pMemAllocProperties = 0x00007ffd893ef550
+Target LEVEL0 RTL -->     phDevice = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Allocated target memory 0x00000000010d4000 (Base: 0x00000000010d4000, Size: 65536) from memory pool for host ptr 0x00000000004081b0
+Libomptarget --> Creating new map entry with HstPtrBegin=0x00000000004081b0, TgtPtrBegin=0x00000000010d4000, Size=65536, DynRefCount=1, HoldRefCount=0, Name=A
+Libomptarget --> Moving 65536 bytes (hst:0x00000000004081b0) -> (tgt:0x00000000010d4000)
+Target LEVEL0 RTL --> ZE_CALLER: zeMemGetAllocProperties ( Context, Ptr, &properties, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemGetAllocProperties (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0x00000000010d4000
+Target LEVEL0 RTL -->     pMemAllocProperties = 0x00007ffd893ef5b0
+Target LEVEL0 RTL -->     phDevice = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeMemGetAllocProperties ( Context, Ptr, &properties, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemGetAllocProperties (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0x00000000004081b0
+Target LEVEL0 RTL -->     pMemAllocProperties = 0x00007ffd893ef5b0
+Target LEVEL0 RTL -->     phDevice = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Copied 65536 bytes (hst:0x00000000004081b0) -> (tgt:0x00000000010d4000)
+Libomptarget --> There are 65536 bytes allocated at target address 0x00000000010d4000 - is new
+Libomptarget --> Looking up mapping(HstPtrBegin=0x00000000004181b0, Size=65536)...
+Target LEVEL0 RTL --> ZE_CALLER: zeMemGetAllocProperties ( Context, Ptr, &properties, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemGetAllocProperties (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0x00000000004181b0
+Target LEVEL0 RTL -->     pMemAllocProperties = 0x00007ffd893ef730
+Target LEVEL0 RTL -->     phDevice = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Ptr 0x00000000004181b0 is not a device accessible memory pointer.
+Target LEVEL0 RTL --> ZE_CALLER: zeMemGetAllocProperties ( Context, Ptr, &properties, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemGetAllocProperties (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0x00000000010e4000
+Target LEVEL0 RTL -->     pMemAllocProperties = 0x00007ffd893ef550
+Target LEVEL0 RTL -->     phDevice = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Allocated target memory 0x00000000010e4000 (Base: 0x00000000010e4000, Size: 65536) from memory pool for host ptr 0x00000000004181b0
+Libomptarget --> Creating new map entry with HstPtrBegin=0x00000000004181b0, TgtPtrBegin=0x00000000010e4000, Size=65536, DynRefCount=1, HoldRefCount=0, Name=B
+Libomptarget --> Moving 65536 bytes (hst:0x00000000004181b0) -> (tgt:0x00000000010e4000)
+Target LEVEL0 RTL --> ZE_CALLER: zeMemGetAllocProperties ( Context, Ptr, &properties, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemGetAllocProperties (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0x00000000010e4000
+Target LEVEL0 RTL -->     pMemAllocProperties = 0x00007ffd893ef5b0
+Target LEVEL0 RTL -->     phDevice = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeMemGetAllocProperties ( Context, Ptr, &properties, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemGetAllocProperties (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0x00000000004181b0
+Target LEVEL0 RTL -->     pMemAllocProperties = 0x00007ffd893ef5b0
+Target LEVEL0 RTL -->     phDevice = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Copied 65536 bytes (hst:0x00000000004181b0) -> (tgt:0x00000000010e4000)
+Libomptarget --> There are 65536 bytes allocated at target address 0x00000000010e4000 - is new
+Libomptarget --> Looking up mapping(HstPtrBegin=0x00000000004281b0, Size=65536)...
+Libomptarget --> Mapping exists with HstPtrBegin=0x00000000004281b0, TgtPtrBegin=0x00000000010c4000, Size=65536, DynRefCount=1 (update suppressed), HoldRefCount=0
+Libomptarget --> Obtained target argument (Begin: 0x00000000010c4000, Offset: 0) from host pointer 0x00000000004281b0
+Libomptarget --> Looking up mapping(HstPtrBegin=0x00000000004081b0, Size=65536)...
+Libomptarget --> Mapping exists with HstPtrBegin=0x00000000004081b0, TgtPtrBegin=0x00000000010d4000, Size=65536, DynRefCount=1 (update suppressed), HoldRefCount=0
+Libomptarget --> Obtained target argument (Begin: 0x00000000010d4000, Offset: 0) from host pointer 0x00000000004081b0
+Libomptarget --> Looking up mapping(HstPtrBegin=0x00000000004181b0, Size=65536)...
+Libomptarget --> Mapping exists with HstPtrBegin=0x00000000004181b0, TgtPtrBegin=0x00000000010e4000, Size=65536, DynRefCount=1 (update suppressed), HoldRefCount=0
+Libomptarget --> Obtained target argument (Begin: 0x00000000010e4000, Offset: 0) from host pointer 0x00000000004181b0
+Libomptarget --> Forwarding first-private value 0x0000000000000000 to the target construct
+Libomptarget --> Forwarding first-private value 0x000000000000007f to the target construct
+Libomptarget --> Launching target execution __omp_offloading_3a_d5ef4b2c__Z7Compute_l28 with pointer 0x00000000007b15b0 (index=0).
+Libomptarget --> Manifesting used target pointers:
+Target LEVEL0 RTL --> Executing a kernel 0x00000000007b15b0...
+Target LEVEL0 RTL --> ZE_CALLER: zeKernelSetArgumentValue ( kernel, i, sizeof(arg), arg == nullptr ? nullptr : &arg )
+Target LEVEL0 RTL --> ZE_CALLEE: zeKernelSetArgumentValue (
+Target LEVEL0 RTL -->     hKernel = 0x0000000001419be0
+Target LEVEL0 RTL -->     argIndex = 0
+Target LEVEL0 RTL -->     argSize = 8
+Target LEVEL0 RTL -->     pArgValue = 0x00007ffd893ef8b0
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Kernel Pointer argument 0 (value: 0x00000000010c4000) was set successfully.
+Target LEVEL0 RTL --> ZE_CALLER: zeKernelSetArgumentValue ( kernel, i, sizeof(arg), arg == nullptr ? nullptr : &arg )
+Target LEVEL0 RTL --> ZE_CALLEE: zeKernelSetArgumentValue (
+Target LEVEL0 RTL -->     hKernel = 0x0000000001419be0
+Target LEVEL0 RTL -->     argIndex = 1
+Target LEVEL0 RTL -->     argSize = 8
+Target LEVEL0 RTL -->     pArgValue = 0x00007ffd893ef8b0
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Kernel Pointer argument 1 (value: 0x00000000010d4000) was set successfully.
+Target LEVEL0 RTL --> ZE_CALLER: zeKernelSetArgumentValue ( kernel, i, sizeof(arg), arg == nullptr ? nullptr : &arg )
+Target LEVEL0 RTL --> ZE_CALLEE: zeKernelSetArgumentValue (
+Target LEVEL0 RTL -->     hKernel = 0x0000000001419be0
+Target LEVEL0 RTL -->     argIndex = 2
+Target LEVEL0 RTL -->     argSize = 8
+Target LEVEL0 RTL -->     pArgValue = 0x00007ffd893ef8b0
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Kernel Pointer argument 2 (value: 0x00000000010e4000) was set successfully.
+Target LEVEL0 RTL --> ZE_CALLER: zeKernelSetArgumentValue ( kernel, i, sizeof(arg), &arg )
+Target LEVEL0 RTL --> ZE_CALLEE: zeKernelSetArgumentValue (
+Target LEVEL0 RTL -->     hKernel = 0x0000000001419be0
+Target LEVEL0 RTL -->     argIndex = 3
+Target LEVEL0 RTL -->     argSize = 8
+Target LEVEL0 RTL -->     pArgValue = 0x00007ffd893ef8b0
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Kernel Scalar argument 3 (value: 0x0000000000000000) was set successfully.
+Target LEVEL0 RTL --> ZE_CALLER: zeKernelSetArgumentValue ( kernel, i, sizeof(arg), &arg )
+Target LEVEL0 RTL --> ZE_CALLEE: zeKernelSetArgumentValue (
+Target LEVEL0 RTL -->     hKernel = 0x0000000001419be0
+Target LEVEL0 RTL -->     argIndex = 4
+Target LEVEL0 RTL -->     argSize = 8
+Target LEVEL0 RTL -->     pArgValue = 0x00007ffd893ef8b0
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Kernel Scalar argument 4 (value: 0x000000000000007f) was set successfully.
+Target LEVEL0 RTL --> ZE_CALLER: zeKernelSetIndirectAccess ( kernel, flags )
+Target LEVEL0 RTL --> ZE_CALLEE: zeKernelSetIndirectAccess (
+Target LEVEL0 RTL -->     hKernel = 0x0000000001419be0
+Target LEVEL0 RTL -->     flags = 0
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Setting indirect access flags 0x0000000000000000
+Target LEVEL0 RTL --> Assumed kernel SIMD width is 16
+Target LEVEL0 RTL --> Preferred group size is multiple of 16
+Target LEVEL0 RTL --> Max group size is set to 128 (thread_limit clause)
+Target LEVEL0 RTL --> Level 0: Lb = 0, Ub = 127, Stride = 1
+Target LEVEL0 RTL --> Group sizes = {128, 1, 1}
+Target LEVEL0 RTL --> Group counts = {1, 1, 1}
+Target LEVEL0 RTL --> ZE_CALLER: zeKernelSetGroupSize ( kernel, groupSizes[0], groupSizes[1], groupSizes[2] )
+Target LEVEL0 RTL --> ZE_CALLEE: zeKernelSetGroupSize (
+Target LEVEL0 RTL -->     hKernel = 0x0000000001419be0
+Target LEVEL0 RTL -->     groupSizeX = 128
+Target LEVEL0 RTL -->     groupSizeY = 1
+Target LEVEL0 RTL -->     groupSizeZ = 1
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandListAppendLaunchKernel ( cmdList, kernel, &groupCounts, event, 0, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandListAppendLaunchKernel (
+Target LEVEL0 RTL -->     hCommandList = 0x0000000000956820
+Target LEVEL0 RTL -->     hKernel = 0x0000000001419be0
+Target LEVEL0 RTL -->     pLaunchFuncArgs = 0x00007ffd893ef8b0
+Target LEVEL0 RTL -->     hSignalEvent = 0x0000000000000000
+Target LEVEL0 RTL -->     numWaitEvents = 0
+Target LEVEL0 RTL -->     phWaitEvents = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandListClose ( cmdList )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandListClose (
+Target LEVEL0 RTL -->     hCommandList = 0x0000000000956820
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandQueueExecuteCommandLists ( cmdQueue, 1, &cmdList, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandQueueExecuteCommandLists (
+Target LEVEL0 RTL -->     hCommandQueue = 0x00000000013465c0
+Target LEVEL0 RTL -->     numCommandLists = 1
+Target LEVEL0 RTL -->     phCommandLists = 0x00007ffd893ef8c0
+Target LEVEL0 RTL -->     hFence = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandQueueSynchronize ( cmdQueue, (18446744073709551615UL) )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandQueueSynchronize (
+Target LEVEL0 RTL -->     hCommandQueue = 0x00000000013465c0
+Target LEVEL0 RTL -->     timeout = 18446744073709551615
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandListReset ( cmdList )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandListReset (
+Target LEVEL0 RTL -->     hCommandList = 0x0000000000956820
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Executed a kernel 0x00000000007b15b0
+Libomptarget --> Looking up mapping(HstPtrBegin=0x00000000004181b0, Size=65536)...
+Libomptarget --> Mapping exists with HstPtrBegin=0x00000000004181b0, TgtPtrBegin=0x00000000010e4000, Size=65536, DynRefCount=1 (deferred final decrement), HoldRefCount=0
+Libomptarget --> There are 65536 bytes allocated at target address 0x00000000010e4000 - is last
+Libomptarget --> Looking up mapping(HstPtrBegin=0x00000000004081b0, Size=65536)...
+Libomptarget --> Mapping exists with HstPtrBegin=0x00000000004081b0, TgtPtrBegin=0x00000000010d4000, Size=65536, DynRefCount=1 (deferred final decrement), HoldRefCount=0
+Libomptarget --> There are 65536 bytes allocated at target address 0x00000000010d4000 - is last
+Libomptarget --> Looking up mapping(HstPtrBegin=0x00000000004281b0, Size=65536)...
+Libomptarget --> Mapping exists with HstPtrBegin=0x00000000004281b0, TgtPtrBegin=0x00000000010c4000, Size=65536, DynRefCount=1 (deferred final decrement), HoldRefCount=0
+Libomptarget --> There are 65536 bytes allocated at target address 0x00000000010c4000 - is last
+Libomptarget --> Moving 65536 bytes (tgt:0x00000000010c4000) -> (hst:0x00000000004281b0)
+Target LEVEL0 RTL --> ZE_CALLER: zeMemGetAllocProperties ( Context, Ptr, &properties, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemGetAllocProperties (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0x00000000004281b0
+Target LEVEL0 RTL -->     pMemAllocProperties = 0x00007ffd893ef710
+Target LEVEL0 RTL -->     phDevice = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeMemGetAllocProperties ( Context, Ptr, &properties, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemGetAllocProperties (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0x00000000010c4000
+Target LEVEL0 RTL -->     pMemAllocProperties = 0x00007ffd893ef710
+Target LEVEL0 RTL -->     phDevice = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Copied 65536 bytes (tgt:0x00000000010c4000) -> (hst:0x00000000004281b0)
+Libomptarget --> Looking up mapping(HstPtrBegin=0x00000000004181b0, Size=65536)...
+Libomptarget --> Deleting tgt data 0x00000000010e4000 of size 65536
+Target LEVEL0 RTL --> ZE_CALLER: zeMemGetAllocProperties ( Context, Ptr, &properties, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemGetAllocProperties (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0x00000000010e4000
+Target LEVEL0 RTL -->     pMemAllocProperties = 0x00007ffd893ef780
+Target LEVEL0 RTL -->     phDevice = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeMemGetAllocProperties ( Context, Ptr, &properties, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemGetAllocProperties (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0x00000000010e4000
+Target LEVEL0 RTL -->     pMemAllocProperties = 0x00007ffd893ef710
+Target LEVEL0 RTL -->     phDevice = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Returned device memory 0x00000000010e4000 to memory pool
+Libomptarget --> Removing map entry with HstPtrBegin=0x00000000004181b0, TgtPtrBegin=0x00000000010e4000, Size=65536, Name=B
+Libomptarget --> Looking up mapping(HstPtrBegin=0x00000000004081b0, Size=65536)...
+Libomptarget --> Deleting tgt data 0x00000000010d4000 of size 65536
+Target LEVEL0 RTL --> ZE_CALLER: zeMemGetAllocProperties ( Context, Ptr, &properties, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemGetAllocProperties (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0x00000000010d4000
+Target LEVEL0 RTL -->     pMemAllocProperties = 0x00007ffd893ef780
+Target LEVEL0 RTL -->     phDevice = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeMemGetAllocProperties ( Context, Ptr, &properties, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemGetAllocProperties (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0x00000000010d4000
+Target LEVEL0 RTL -->     pMemAllocProperties = 0x00007ffd893ef710
+Target LEVEL0 RTL -->     phDevice = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Returned device memory 0x00000000010d4000 to memory pool
+Libomptarget --> Removing map entry with HstPtrBegin=0x00000000004081b0, TgtPtrBegin=0x00000000010d4000, Size=65536, Name=A
+Libomptarget --> Looking up mapping(HstPtrBegin=0x00000000004281b0, Size=65536)...
+Libomptarget --> Deleting tgt data 0x00000000010c4000 of size 65536
+Target LEVEL0 RTL --> ZE_CALLER: zeMemGetAllocProperties ( Context, Ptr, &properties, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemGetAllocProperties (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0x00000000010c4000
+Target LEVEL0 RTL -->     pMemAllocProperties = 0x00007ffd893ef780
+Target LEVEL0 RTL -->     phDevice = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeMemGetAllocProperties ( Context, Ptr, &properties, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemGetAllocProperties (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0x00000000010c4000
+Target LEVEL0 RTL -->     pMemAllocProperties = 0x00007ffd893ef710
+Target LEVEL0 RTL -->     phDevice = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Returned device memory 0x00000000010c4000 to memory pool
+Libomptarget --> Removing map entry with HstPtrBegin=0x00000000004281b0, TgtPtrBegin=0x00000000010c4000, Size=65536, Name=C
+Target OPENCL RTL --> Closed RTL successfully
+Libomptarget --> Unloading target library!
+Target LEVEL0 RTL --> Target binary is a valid oneAPI OpenMP image.
+Libomptarget --> Image 0x0000000000402400 is compatible with RTL 0x00000000005aa570!
+Libomptarget --> Unregistered image 0x0000000000402400 from RTL 0x00000000005aa570!
+Libomptarget --> Done unregistering images!
+Libomptarget --> Removing translation table for descriptor 0x00000000004023e0
+Libomptarget --> Done unregistering library!
+Libomptarget --> Deinit target library!
+Target LEVEL0 RTL --> Deinit Level0 plugin!
+Target LEVEL0 RTL --> ZE_CALLER: zeKernelDestroy ( Kernel )
+Target LEVEL0 RTL --> ZE_CALLEE: zeKernelDestroy (
+Target LEVEL0 RTL -->     hKernel = 0x0000000001419be0
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeModuleDestroy ( Module )
+Target LEVEL0 RTL --> ZE_CALLEE: zeModuleDestroy (
+Target LEVEL0 RTL -->     hModule = 0x00000000007aff20
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandListDestroy ( CmdList.second )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandListDestroy (
+Target LEVEL0 RTL -->     hCommandList = 0x0000000000956820
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeCommandQueueDestroy ( CmdQueue.second )
+Target LEVEL0 RTL --> ZE_CALLEE: zeCommandQueueDestroy (
+Target LEVEL0 RTL -->     hCommandQueue = 0x00000000013465c0
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeMemGetAddressRange ( DeviceInfo->Context, Ptr, &base, &size )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemGetAddressRange (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0x00000000010c4000
+Target LEVEL0 RTL -->     pBase = 0x00007ffd893efbc0
+Target LEVEL0 RTL -->     pSize = 0x00007ffd893efba0
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeMemGetAllocProperties ( Context, Ptr, &properties, nullptr )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemGetAllocProperties (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0x00000000010c4000
+Target LEVEL0 RTL -->     pMemAllocProperties = 0x00007ffd893efb30
+Target LEVEL0 RTL -->     phDevice = 0x0000000000000000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> ZE_CALLER: zeMemFree ( Context, (void *)block->Base )
+Target LEVEL0 RTL --> ZE_CALLEE: zeMemFree (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL -->     ptr = 0x00000000010c4000
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Memory usage for host memory, device 0:
+Target LEVEL0 RTL --> -- Allocator:       Native,         Pool
+Target LEVEL0 RTL --> -- Requested:            0,            0
+Target LEVEL0 RTL --> -- Allocated:            0,            0
+Target LEVEL0 RTL --> -- Freed    :            0,            0
+Target LEVEL0 RTL --> -- InUse    :            0,            0
+Target LEVEL0 RTL --> -- PeakUse  :            0,            0
+Target LEVEL0 RTL --> -- NumAllocs:            0,            0
+Target LEVEL0 RTL --> Memory usage for shared memory, device 0:
+Target LEVEL0 RTL --> -- Allocator:       Native,         Pool
+Target LEVEL0 RTL --> -- Requested:       262144,       196608
+Target LEVEL0 RTL --> -- Allocated:       262144,       196608
+Target LEVEL0 RTL --> -- Freed    :       262144,       196608
+Target LEVEL0 RTL --> -- InUse    :            0,            0
+Target LEVEL0 RTL --> -- PeakUse  :       262144,       196608
+Target LEVEL0 RTL --> -- NumAllocs:            1,            3
+Target LEVEL0 RTL --> Memory usage for device memory, device 0:
+Target LEVEL0 RTL --> -- Allocator:       Native,         Pool
+Target LEVEL0 RTL --> -- Requested:            0,            0
+Target LEVEL0 RTL --> -- Allocated:            0,            0
+Target LEVEL0 RTL --> -- Freed    :            0,            0
+Target LEVEL0 RTL --> -- InUse    :            0,            0
+Target LEVEL0 RTL --> -- PeakUse  :            0,            0
+Target LEVEL0 RTL --> -- NumAllocs:            0,            0
+Target LEVEL0 RTL --> ZE_CALLER: zeContextDestroy ( DeviceInfo->Context )
+Target LEVEL0 RTL --> ZE_CALLEE: zeContextDestroy (
+Target LEVEL0 RTL -->     hContext = 0x0000000000794f20
+Target LEVEL0 RTL --> )
+Target LEVEL0 RTL --> Closed RTL successfully
+Target OPENCL RTL --> Deinit OpenCL plugin!
+OMPT: Finalising tool
