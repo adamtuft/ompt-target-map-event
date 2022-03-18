@@ -40,13 +40,18 @@ ompt_initialise(
     int                    initial_device_num, 
     ompt_data_t *          tool_data)
 {   
-    ompt_set_callback_t ompt_set_callback = 
-        (ompt_set_callback_t) lookup("ompt_set_callback");
+    ompt_set_callback_t ompt_set_callback = (ompt_set_callback_t) lookup("ompt_set_callback");
 
-    ompt_set_result_t result = ompt_set_callback(
-        ompt_callback_target_map,
-        (ompt_callback_t) on_ompt_callback_target_map
-    );
+    // ompt_set_result_t result = ompt_set_callback(ompt_callback_target_map, (ompt_callback_t) on_ompt_callback_target_map);
+    ompt_set_result_t result = ompt_set_never;
+
+#define SET_CALLBACK(event)                                                   \
+    do {                                                                      \
+        result = ompt_set_callback(event, (ompt_callback_t) on_##event);      \
+        fprintf(stderr, "OMPT: set callback %s = %d\n", "on_" #event, result);\
+    } while(0);
+
+    SET_CALLBACK(ompt_callback_target_map);
 
     fprintf(stderr, "OMPT: Set callback for ompt_callback_target_map event with result: %d\n", result);
 

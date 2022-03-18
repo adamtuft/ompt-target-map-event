@@ -1,0 +1,41 @@
+#if !defined(TOOL_CALLBACKS_H)
+#define TOOL_CALLBACKS_H
+
+/* Include the function prototypes for the callbacks this tool implements */
+#define implements_callback_parallel_begin
+#define implements_callback_parallel_end
+#define implements_callback_thread_begin
+#define implements_callback_thread_end
+#define implements_callback_thread_begin
+#define implements_callback_thread_end
+#define implements_callback_parallel_begin
+#define implements_callback_parallel_end
+#define implements_callback_task_create
+#define implements_callback_task_schedule
+#define implements_callback_implicit_task
+#define implements_callback_target
+#define implements_callback_target_data_op
+#define implements_callback_target_submit
+#define implements_callback_device_initialize
+#define implements_callback_device_finalize
+#define implements_callback_device_load
+#define implements_callback_device_unload
+#define implements_callback_sync_region_wait
+#define implements_callback_mutex_released
+#define implements_callback_dependences
+#define implements_callback_task_dependence
+#define implements_callback_work
+#define implements_callback_target_map
+#define implements_callback_sync_region
+#define implements_callback_lock_init
+#define implements_callback_lock_destroy
+#define implements_callback_mutex_acquire
+#define implements_callback_mutex_acquired
+#define implements_callback_nest_lock
+#define implements_callback_flush
+#define implements_callback_cancel
+#define implements_callback_reduction
+#define implements_callback_dispatch
+#include "include/ompt-callback-prototypes.h"
+
+#endif // TOOL_CALLBACKS_H
